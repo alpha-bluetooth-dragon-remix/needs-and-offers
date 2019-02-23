@@ -1,0 +1,12 @@
+MVP
+Which features:
+1.  a page (page 1) to enter needs
+    - input for need
+    - input for contact info.
+    - submit button
+2.  a page (page 2)
+    - summary of needs
+      - append the data that was collect on the first page to an array of objects
+      - present visually on the page (each object)
+    - way to select a need to tackle
+      - button
