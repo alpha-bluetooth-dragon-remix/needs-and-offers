@@ -55,4 +55,4 @@ Stretch goal: PHP third party email.
 Init function that holds all the form stuff
 
 */
-alert('app js is linked');
+
