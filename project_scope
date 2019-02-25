@@ -1,12 +1,13 @@
+
 MVP
-Which features:
-1.  a page (page 1) to enter needs
-    - input for need
-    - input for contact info.
-    - submit button
-2.  a page (page 2)
-    - summary of needs
-      - append the data that was collect on the first page to an array of objects
-      - present visually on the page (each object)
-    - way to select a need to tackle
-      - button
+User friendly page (page 1) where visitors can enter a need.
+Submitted need will renter onto a needs page (page 2).
+User can respond to need by checking the boxes they want and then submitting (page 2).
+Once the counter is reached on the checked/submitted item, that need is removed (page 2).
+  - the needer receives an email alert
+  - the needer and offerer connect on their own
+  
+Stretch
+Dropdown on needs page (page 1) to categorize the need.
+Categorization on the needs summary page (page 2) that breaks the needs into categories.
+Submit counter and erasing items
