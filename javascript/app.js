@@ -74,7 +74,3 @@ Stretch goal: PHP third party email.
 Init function that holds all the form stuff
 
 
-// in case we need stringy storage
-//var stringy_needs = JSON.stringify(need_detail); //saving product data
-//localStorage.setItem('all_products', stringy_needs);
-//console.log('products data saved to local storage');
