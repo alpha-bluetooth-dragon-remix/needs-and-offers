@@ -1,4 +1,6 @@
 'use strict';
+
+var need_detail = [];
 /*
 Function that accepts the name, email, need
     form
@@ -6,13 +8,38 @@ Have need function separate from name and email function
     a contact
     a need
 Constructor function -- will create new Needs_form object and render new objects to bank page with each submit
-Add small grayed out print asking for specifications
-    var Needs_form = function (needer_name, email, need_input){
-        this.needer_name = needer_name;
-        this.email = email;
-        this.need_input = need_input;
-    }
+*/
+var Need_form = function(contact_name, email, need_input){
+    this.contact_name = contact_name;
+    this.email = email;
+    this.need_input = need_input;
+    need_detail.push(this);
+}
+//function that is called when the mouse is clicked
+var handle_need_submit = function (submit){
+    submit.preventDefault();
+    
+    //Assigns variable names to all the content that came in with the form.
+    var name = submit.target.nameInput.value;
+    var email = submit.target.emailInput.value;
+    var need_input = submit.target.description.value;
+
+//creates an instance of the newStore object
+    var newNeed = new Need_form(contact_name, email, need_input);
+
+    newNeed.render();
+    console.log(new_detail);
+ 
+// function for storage
+
+
+//EXTERNAL CODE
+//add an event listener to activate on a mouse click
+entry_form.addEventListener('submit', handle_need_submit);
+
+/*
 add category into constructor function as stretch goal
+
 submit button event listener
     addEventListener('click', submit)
 submit button event handler
