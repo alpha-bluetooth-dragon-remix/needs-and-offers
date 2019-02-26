@@ -18,7 +18,7 @@ var render_list = function(){
     var need_element = document.createElement('ul');
     var need_name = document.createElement('li');
     var need_email = document.createElement('li');
-   var need_description = document.createElement('li');
+    var need_description = document.createElement('li');
 
     //li for name
     need_name.textContent = needs_list[i].name;
@@ -30,6 +30,7 @@ var render_list = function(){
     need_description.textContent = (needs_list[i].need_input);
     need_element.appendChild(need_description);
     target.appendChild(need_element);
+  }
 };
 
 //Is it a bad idea to just enter three in the screen and then have them sit in local memory?
@@ -85,3 +86,4 @@ target.appendChild(element_b_email);
 target.appendChild(element_c_need);
 target.appendChild(element_c_name);
 target.appendChild(element_c_email);
+
