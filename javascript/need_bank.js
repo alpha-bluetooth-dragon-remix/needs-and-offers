@@ -11,25 +11,26 @@ var render_list = function(){
   //brings the contents in storage and moves to global array
   var storage_stringy_needs = localStorage.getItem('all_needs');
   needs_list = JSON.parse(storage_stringy_needs);
+  console.log('needs list at render_list: ', needs_list);
+  var target = document.getElementById('needListItems');
+  var need_ul_el = document.createElement('ul');
+  var need_li_el = document.createElement('li');
+
   //loops through array record by record and renders content to page
   for (var i = 0; i < needs_list.length; i++) {
-    var target = document.getElementById('needListItems');
-    var need_element = document.createElement('ul');
-    var need_name = document.createElement('li');
-    var need_email = document.createElement('li');
-    var need_description = document.createElement('li');
-
     //li for name
-    need_name.textContent = needs_list[i].contact_name;
-    need_element.appendChild(need_name);
+    console.log('needs list right under for: ', needs_list);
+    need_li_el.textContent = needs_list[i].contact_name;
+    console.log('needs list text', needs_list[i].contact_name);
+    need_ul_el.appendChild(need_li_el);
     //li for email
-    need_email.textContent = (needs_list[i].email);
-    need_element.appendChild(need_email);
+    need_li_el.textContent = (needs_list[i].email);
+    need_ul_el.appendChild(need_li_el);
     //li for description
-    need_description.textContent = (needs_list[i].need_input);
-    need_element.appendChild(need_description);
-    target.appendChild(need_element);
+    need_li_el.textContent = (needs_list[i].need_input);
+    need_ul_el.appendChild(need_li_el);
   }
+  target.appendChild(need_ul_el);
 };
 
 //Is it a bad idea to just enter three in the screen and then have them sit in local memory?
