@@ -11,7 +11,6 @@ var render_list = function(){
   //brings the contents in storage and moves to global array
   var storage_stringy_needs = localStorage.getItem('all_needs');
   needs_list = JSON.parse(storage_stringy_needs);
-
   //loops through array record by record and renders content to page
   for (var i = 0; i < needs_list.length; i++) {
     var target = document.getElementById('needListItems');
@@ -43,48 +42,51 @@ var Needs_form = function (contact_name, email, need_input){
 };
 
 // Hard code 3 example Need objects
-var tammy = new Needs_form ('Tammy', 'tammy@aol.com', 'Code 301 answer key.');
+var tammy = new Needs_form ('Tammy', 'tammy@gmail.com', 'Short term housing near Seattle Center.');
 
 var visitor_austin = new Needs_form ('Visitor from Austin', 'aliya@gmail.com', 'Tour of Shoreline');
 
-var bunny = new Needs_form ('Bugs Bunny', 'bugs@bunny.net', 'carrots. lots and lots of carrots.' );
+var demi = new Needs_form ('Demi the Dog', 'demi@the-best-dog.com', 'Nothing; she\'s perfect' );
 
 // Rendering function to make objects show up. Push to array.
 var target = document.getElementById('needListItems');
+var static_ul_el = document.createElement('ul');
 
-var element_a_need = document.createElement('h3');
+var element_a_need = document.createElement('li');
 element_a_need.textContent = `need : ${tammy.need_input}`;
-var element_a_name = document.createElement('h5');
+static_ul_el.appendChild(element_a_need);
+var element_a_name = document.createElement('li');
 element_a_name.textContent = `name : ${tammy.contact_name}`;
-var element_a_email = document.createElement('h5');
+static_ul_el.appendChild(element_a_name);
+var element_a_email = document.createElement('li');
 element_a_email.textContent = `email: ${tammy.email}`;
+static_ul_el.appendChild(element_a_email);
 
 
-var element_b_need = document.createElement('h3');
+var element_b_need = document.createElement('li');
 element_b_need.textContent = `need : ${visitor_austin.need_input}`;
-var element_b_name = document.createElement('h5');
+static_ul_el.appendChild(element_b_need);
+var element_b_name = document.createElement('li');
 element_b_name.textContent = `name : ${visitor_austin.contact_name}`;
-var element_b_email = document.createElement('h5');
+static_ul_el.appendChild(element_b_name);
+var element_b_email = document.createElement('li');
 element_b_email.textContent = `name : ${visitor_austin.email}`;
+static_ul_el.appendChild(element_b_email);
 
-var element_c_need = document.createElement('h3');
-element_c_need.textContent = `need : ${bunny.need_input}`;
-var element_c_name = document.createElement('h5');
-element_b_name.textContent = `name : ${bunny.contact_name}`;
-var element_c_email = document.createElement('h5');
-element_b_email.textContent = `name : ${bunny.email}`;
+
+var element_c_need = document.createElement('li');
+element_c_need.textContent = `need : ${demi.need_input}`;
+static_ul_el.appendChild(element_c_need);
+var element_c_name = document.createElement('li');
+element_b_name.textContent = `name : ${demi.contact_name}`;
+static_ul_el.appendChild(element_c_name);
+var element_c_email = document.createElement('li');
+element_b_email.textContent = `email : ${demi.email}`;
+static_ul_el.appendChild(element_c_email);
 
 //Append example objects to needListItems
-target.appendChild(element_a_need);
-target.appendChild(element_a_name);
-target.appendChild(element_a_email);
 
-target.appendChild(element_b_need);
-target.appendChild(element_b_name);
-target.appendChild(element_b_email);
 
-target.appendChild(element_c_need);
-target.appendChild(element_c_name);
-target.appendChild(element_c_email);
+target.appendChild(static_ul_el);
 
 render_list();
