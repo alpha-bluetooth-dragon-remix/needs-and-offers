@@ -33,7 +33,20 @@ header nav li{
     padding-top: 15px;
     border-radius: 25px;
 }
+form{
+    width: 200px;
+    background-image: url(/img/post_it_note.jpg);
+    background-size: cover;
+}
 
+label {
+    display: inline-block;
+    vertical-align: left;  
+    margin: 10px;
+}
+#need-button {
+    padding-left: 0px;
+}
 footer div img{
     max-width: 100%;
     height: auto;
