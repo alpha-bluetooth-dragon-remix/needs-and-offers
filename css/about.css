@@ -1,1 +1,75 @@
+body{
+    background-color: rgb(152, 178, 183)
+}
+body ul{
+    list-style-type: none;
+}
+header div{
+    width:100%;
+}
+#header{
+    max-width: 100%;
+    height: auto;
+    float: left;
+}
+#logo{
+    width: 15%;
+    position: absolute;
+    top: 7px;
+    left: 10px;
+}
 
+header nav ul{
+    width: 90%;
+    list-style-type: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: inline-block;
+}
+header nav li{
+    float: right;
+    display: inline-block;
+    border-style: solid;
+    border-width: 2px;
+    width: 80px;
+    text-align: center;
+    margin: 5px;
+    height: 35px;
+    padding-top: 15px;
+    border-radius: 25px;
+}
+content article{
+    width: 80%;
+    margin: auto;
+    margin-bottom: 90px;
+}
+content article h1{
+    text-align: center;
+}
+content article p{
+    text-indent: 50px;
+}
+section{
+    width: 60%;
+    margin: auto;
+    margin-bottom: 60px;
+}
+section h1{
+    margin-top: 90px;
+    text-align: center;
+}
+
+.linkedin{
+    width: 100px;
+}
+
+#firstBio{
+    float: left;
+}
+#secondBio{
+    float: right;
+}
+
+footer div img{
+    max-width: 100%;
+    height: auto;
+}
