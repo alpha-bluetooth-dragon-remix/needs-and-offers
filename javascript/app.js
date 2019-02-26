@@ -1,5 +1,5 @@
 'use strict';
-
+//set it so that if there's something in local storage, need_detail doesn't act like an empty array
 var need_detail = [];
 /*
 Function that accepts the name, email, need
@@ -42,22 +42,32 @@ Need_form.prototype.render = function(){
 //function that is called when the submit button is pushed
 var submit_button_handler = function(event){
   event.preventDefault();
-    
+  //this array is going to clear the global array
+  need_detail = [];
+  var storage_stringy_needs = localStorage.getItem('all_needs');
+  need_detail = JSON.parse(storage_stringy_needs);
+
   //Assigns variable names to all the content that came in with the form.
   var contact_name = event.target.nameInput.value;
   var email = event.target.emailInput.value;
   var need_input = event.target.description.value;
 
+  //check to see if there's anything in local storage and bump it into the array
   //creates an instance of the Need_form object
   var newNeed = new Need_form(contact_name, email, need_input);
   need_detail.push(newNeed);
+  needs_storage();
+  //needs_storage.preventDefault();
+  //newNeed.render();
+};
 
-  var stringy_needs = JSON.stringify(need_detail); //saving product data
+var needs_storage = function(){var stringy_needs = JSON.stringify(need_detail); //saving product data
   localStorage.setItem('all_needs', stringy_needs);
   console.log('needs Saved');
   console.log(need_detail);
-  //newNeed.render();
 };
+
+
 
 var entryForm = document.getElementById('entry-form');
 //EXTERNAL CODE
