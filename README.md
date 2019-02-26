@@ -18,4 +18,7 @@ This market makes the needs and resources known! Whether the need is 1 month of 
 ### Semantic versioning
 1.4.0
 
-### List of any libraries, frameworks, or packages that your application requires in order to properly function. If needed, provide instructions that the user may need to follow in order to get your application up and running on their own computer. 
+### List of any libraries, frameworks, or packages that your application requires in order to properly function. If needed, provide instructions that the user may need to follow in order to get your application up and running on their own computer.
+
+###sticky note picture source
+https://webiconspng.com/icon/56365
