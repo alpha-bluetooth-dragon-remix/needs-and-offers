@@ -1,3 +1,20 @@
+body{
+    background-color: rgb(152, 178, 183)
+}
+header div{
+    width:100%;
+}
+#header{
+    max-width: 100%;
+    height: auto;
+    float: left;
+}
+#logo{
+    width: 15%;
+    position: absolute;
+    top: 7px;
+    left: 10px;
+}
 header nav ul{
     width: 90%;
     list-style-type: none;
