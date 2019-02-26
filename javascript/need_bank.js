@@ -1,11 +1,40 @@
 'use strict';
 
+//Note: I am guessing we will need to restructure this a little, since we need
+//to pull everything from localStorage. 
 
-/*
-Take data that was parsed and add it to local storage
+//Global Variable - stores contents from local Storage
+var needs_list = [];
 
-*/
+//Function -- render a form to the needs list page
+var render_list = function(){
+  //brings the contents in storage and moves to global array
+  var storage_stringy_needs = localStorage.getItem('all_needs');
+  needs_list = JSON.parse(storage_stringy_needs);
 
+  //loops through array record by record and renders content to page
+  for (var i = 0; i < needs_list.length; i++) {
+    var target = document.getElementById('needListItems');
+    var need_element = document.createElement('ul');
+    var need_name = document.createElement('li');
+    var need_email = document.createElement('li');
+   var need_description = document.createElement('li');
+
+    //li for name
+    need_name.textContent = needs_list[i].name;
+    need_element.appendChild(need_name);
+    //li for email
+    need_email.textContent = (needs_list[i].email);
+    need_element.appendChild(need_email);
+    //li for description
+    need_description.textContent = (needs_list[i].need_input);
+    need_element.appendChild(need_description);
+    target.appendChild(need_element);
+};
+
+//Is it a bad idea to just enter three in the screen and then have them sit in local memory?
+//Guessing we could get rid of all code below. I know that is probably a nightmare for Tammy and Aliya, since
+//you spent a long time on this code. It looks great, I'm just not sure how to use it with the local storage.
 var Needs_form = function (contact_name, email, need_input){
   this.contact_name = contact_name;
   this.email = email;
@@ -56,5 +85,3 @@ target.appendChild(element_b_email);
 target.appendChild(element_c_need);
 target.appendChild(element_c_name);
 target.appendChild(element_c_email);
-
-// from here, take the objects from local storage, parse them, add to their own array and append to page
