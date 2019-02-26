@@ -16,10 +16,10 @@ var submit_button_handler = function(event){
   //clears the button
   event.preventDefault();
   //clears the global array
-  need_detail = [];
+  //need_detail = [];
   //brings the contents in storage and moves to global array
-  var storage_stringy_needs = localStorage.getItem('all_needs');
-  need_detail = JSON.parse(storage_stringy_needs);
+  // var storage_stringy_needs = localStorage.getItem('all_needs');
+  // need_detail = JSON.parse(storage_stringy_needs);
 
   //assigns variable names to all the content that came in with the form
   var contact_name = event.target.nameInput.value;

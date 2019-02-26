@@ -21,7 +21,7 @@ var render_list = function(){
     var need_description = document.createElement('li');
 
     //li for name
-    need_name.textContent = needs_list[i].name;
+    need_name.textContent = needs_list[i].contact_name;
     need_element.appendChild(need_name);
     //li for email
     need_email.textContent = (needs_list[i].email);
@@ -87,3 +87,4 @@ target.appendChild(element_c_need);
 target.appendChild(element_c_name);
 target.appendChild(element_c_email);
 
+render_list();
