@@ -46,9 +46,10 @@ header nav li:hover {
     color: blueviolet;
   }
 header h1{
+    width: 300px;
     position: relative;
     top: -120px;
-    left: 20px;
+    left: 25px;
     font-size: 180%;
 }
 main{
@@ -89,13 +90,4 @@ label {
 footer div img{
     max-width: 100%;
     height: auto;
-}
-footer p{
-    width: 98%;
-    font-family: 'Caveat Brush', cursive;
-    color: white;
-    font-size: 130%;
-    text-align: right;
-    position: absolute;
-    bottom: -305px;
 }
