@@ -22,3 +22,6 @@ This market makes the needs and resources known! Whether the need is 1 month of 
 
 ###sticky note picture source
 https://webiconspng.com/icon/56365
+
+###Sticky notes wall picture source
+http://danielbota.ro/pseudo-intelectualul/
