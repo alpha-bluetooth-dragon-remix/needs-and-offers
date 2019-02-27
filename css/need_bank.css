@@ -68,17 +68,19 @@ main article{
 hr{
     width: 100%;
 }
+content h1{
+    width: 100%;
+    text-align: center;
+}
 content ul {
-    float: left;
-    width: 325px;
-    height: 250px;
     background-image: url(/img/stickyNote.png);
     background-repeat: no-repeat;
     background-size: auto;
+    width: 325px;
+    height: 250px;
     margin-top: 5px;
     margin-bottom: 5px;
     list-style-type: none;
-    padding-inline-start: 0px;
     font-family: 'Caveat Brush', cursive;
     font-size: 130%;
     }
@@ -91,7 +93,18 @@ content ul li {
     margin-left: 25px;
     margin-top: 20px;
 }
-
+#buttonDiv{
+    width: 100%;
+    text-align: center;
+}
+button{
+    width: 80px;
+    height: 30px;
+}
+#summaryH1{
+    width: 100%;
+    text-align: center;
+}
 footer div img{
     max-width: 100%;
     height: auto;
