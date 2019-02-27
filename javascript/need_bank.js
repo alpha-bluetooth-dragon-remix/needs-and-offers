@@ -10,7 +10,35 @@ var needs_list = [];
 // ALIYA WILL ENTER CODE HERE
 
 
+var render_list = function(){
+  //brings the contents in storage and moves to global array
+  var storage_stringy_needs = localStorage.getItem('all_needs');
+  needs_list = JSON.parse(storage_stringy_needs);
+  console.log('needs list at render_list: ', needs_list);
+  var target = document.getElementById('needListItems');
 
+  console.log('stuff in needs list right before outer for loop', needs_list);
+  //loops through array record by record and renders content to page
+  for (var i = 0; i < needs_list.length; i++) {
+    var need_ul_el = document.createElement('ul');
+    var need_li_el = document.createElement('li');
+    //li for name
+    need_li_el.textContent = needs_list[i].contact_name;
+    need_ul_el.appendChild(need_li_el);
+
+    //li for email
+    need_li_el = document.createElement('li');
+    need_li_el.textContent = (needs_list[i].email);
+    need_ul_el.appendChild(need_li_el);
+
+    //li for description
+    need_li_el = document.createElement('li');
+    need_li_el.textContent = (needs_list[i].need_input);
+    need_ul_el.appendChild(need_li_el);
+
+    target.appendChild(need_ul_el);
+  }
+};
 
 
 
