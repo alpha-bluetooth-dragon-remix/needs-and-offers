@@ -47,40 +47,34 @@ header nav li:hover {
     color: blueviolet;
 }
 main{
-    width: 95%;
+    width: 70%;
     top: -60px;
     margin-left: auto;
     margin-right: auto;
     clear: both;
 }
-main h1{
-    position: relative;
-    top: -60px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 220%;
-    margin: 0px;
-    padding: 0px;
-}
-main section p {
-    display: inline-block;
-    width: 300px;
-    margin-right: 50px;
-    padding: 0px;
-    line-height: 30px;
+main div p {
     float: left;
-}
-main section div {
     display: inline-block;
+    width: 500px;
+    line-height: 30px;
+}
+main article{
     float: right;
-    margin-left: 40px;
-    margin-top: 10px;
+    display: inline-block;
+    width: 500px;
+
+}
+hr{
+    width: 100%;
 }
 content ul {
     float: left;
     width: 325px;
     height: 250px;
     background-image: url(/img/stickyNote.png);
-    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: auto;
     margin-top: 5px;
     margin-bottom: 5px;
     list-style-type: none;
@@ -96,19 +90,9 @@ content ul li {
     padding-right: 5px;
     margin-left: 25px;
     margin-top: 20px;
-
 }
 
 footer div img{
     max-width: 100%;
     height: auto;
-}
-
-footer p{
-    width: 98%;
-    font-family: 'Caveat Brush', cursive;
-    color: white;
-    font-size: 130%;
-    text-align: right;
-    position: absolute;
 }
