@@ -1,5 +1,9 @@
 body{
-    background-color: rgb(152, 178, 183)
+    background-color: rgb(186, 208, 229);
+    font-family: 'B612', sans-serif;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Maven Pro', sans-serif;
 }
 header div{
     width:100%;
@@ -47,13 +51,17 @@ header nav li:hover {
     color: blueviolet;
 }
 main{
-    width: 70%;
+    width: 90%;
     top: -60px;
     margin-left: auto;
     margin-right: auto;
     clear: both;
 }
+main div{
+    text-align: center;
+}
 main div p {
+    text-align: left;
     float: left;
     display: inline-block;
     width: 500px;
@@ -68,27 +76,37 @@ main article{
 hr{
     width: 100%;
 }
+
 content h1{
     width: 100%;
     text-align: center;
 }
+content input{
+    margin-left: 25px;
+    width: 30px;
+    height: 30px;
+}
 content ul {
+    display: inline-block;
+    width: 325px;
+    height: 325px;
     background-image: url(/img/stickyNote.png);
     background-repeat: no-repeat;
-    background-size: auto;
-    width: 325px;
-    height: 250px;
+    background-size: 100%;
+    margin-left: 32px;
     margin-top: 5px;
+    margin-right: 32px;
     margin-bottom: 5px;
     list-style-type: none;
     font-family: 'Caveat Brush', cursive;
     font-size: 130%;
-    }
+    padding-inline-start: 0px;
+}
 
 content ul li {
     display: inline-block;
     vertical-align: left;  
-    width: 275px;
+    width: 280px;
     padding-right: 5px;
     margin-left: 25px;
     margin-top: 20px;
