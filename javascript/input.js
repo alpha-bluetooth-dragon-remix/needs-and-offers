@@ -5,9 +5,6 @@ if (localStorage && localStorage.all_needs)
 { //right now this grabs from local storage
   need_detail = JSON.parse(localStorage.getItem('all_needs'));
   console.log('input storage: ', need_detail);
-  // need_detail = JSON.parse(input_storage);
-  //var stringy_needs_two = JSON.stringify(need_detail); //saving product data
-  //localStorage.setItem('all_needs', stringy_needs);
   console.log(need_detail);
   //input_storage.JSON.parse(stringy_needs);
 }
@@ -20,11 +17,8 @@ var Need_form = function(contact_name, email, need_input){
 };
 
 
-
 //Function - creates a form and sends it to storage when the submit button is pushed
 var submit_button_handler = function(event){
-  //clears the button
-  event.preventDefault();
 
   //assigns variable names to all the content that came in with the form
   var contact_name = event.target.nameInput.value;
