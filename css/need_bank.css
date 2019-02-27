@@ -76,7 +76,27 @@ main section div {
     margin-top: 10px;
 }
 content ul {
-    background-image: url(./img/post_it_note.jpg);
+    float: left;
+    width: 325px;
+    height: 250px;
+    background-image: url(/img/stickyNote.png);
+    background-size: cover;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    list-style-type: none;
+    padding-inline-start: 0px;
+    font-family: 'Caveat Brush', cursive;
+    font-size: 130%;
+    }
+
+content ul li {
+    display: inline-block;
+    vertical-align: left;  
+    width: 275px;
+    padding-right: 5px;
+    margin-left: 25px;
+    margin-top: 20px;
+
 }
 
 footer div img{
