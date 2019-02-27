@@ -103,3 +103,12 @@ footer div img{
     max-width: 100%;
     height: auto;
 }
+
+footer p{
+    width: 98%;
+    font-family: 'Caveat Brush', cursive;
+    color: white;
+    font-size: 130%;
+    text-align: right;
+    position: absolute;
+}
