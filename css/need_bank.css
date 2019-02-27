@@ -57,8 +57,16 @@ main{
     margin-right: auto;
     clear: both;
 }
+main div{
+    float: left;
+    width: 325px;
+}
+main article {
+    width: 325px;
+    float: right;
+}
 content ul {
-    background-image: url('./img/post_it_note.jpg')
+    background-image: url(./img/post_it_note.jpg);
 }
 
 footer div img{
