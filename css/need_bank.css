@@ -21,10 +21,13 @@ header nav ul{
     list-style-type: none;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     display: inline-block;
+    position: relative;
+    top: -80px;
 }
 header nav li{
     float: right;
     display: inline-block;
+    border-color: black;
     border-style: solid;
     border-width: 2px;
     width: 80px;
@@ -33,9 +36,26 @@ header nav li{
     height: 35px;
     padding-top: 15px;
     border-radius: 25px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    background-color: blueviolet;
+    color: white;
 }
-header h1 {
-    
+header nav li:hover {
+    border-color: blueviolet;
+    background-color: black;
+    color: blueviolet;
+}
+h1{
+    position: relative;
+    top: 230px;
+    left: 50px;
+}
+main{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    clear: both;
 }
 content ul {
     background-image: url('./img/post_it_note.jpg')
