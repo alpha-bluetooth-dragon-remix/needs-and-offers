@@ -71,7 +71,7 @@ var element_b_name = document.createElement('li');
 element_b_name.textContent = `name : ${visitor_austin.contact_name}`;
 static_ul_el.appendChild(element_b_name);
 var element_b_email = document.createElement('li');
-element_b_email.textContent = `name : ${visitor_austin.email}`;
+element_b_email.textContent = `email : ${visitor_austin.email}`;
 static_ul_el.appendChild(element_b_email);
 
 

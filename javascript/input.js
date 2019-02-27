@@ -1,6 +1,16 @@
 'use strict';
 //Global variable -- stores needs information form by form in an array
 var need_detail = [];
+if (localStorage && localStorage.all_needs)//I think this needs to === or > something, not just live here without anything else
+  { //right now this grabs from local storage
+    need_detail = JSON.parse(localStorage.getItem('all_needs'));
+    console.log('input storage: ', need_detail);
+    // need_detail = JSON.parse(input_storage);
+    //var stringy_needs_two = JSON.stringify(need_detail); //saving product data
+    //localStorage.setItem('all_needs', stringy_needs);
+    console.log(need_detail);
+    //input_storage.JSON.parse(stringy_needs);
+  }
 
 //Constructor Function  -- creates a need form
 var Need_form = function(contact_name, email, need_input){
@@ -25,26 +35,17 @@ var submit_button_handler = function(event){
   var newNeed = new Need_form(contact_name, email, need_input);
   //call the function that stringifies the contents of the array and sends those contents to storage
   need_detail.push(newNeed);
+  localStorage.setItem('all_needs', JSON.stringify(need_detail));
   needs_storage();
 };
 
 //Function -- stringify the contents of the array and send to local storage
 var needs_storage = function(){
   console.log('heeey');
-  if (localStorage && localStorage.need_detail)//I think this needs to === or > something, not just live here without anything else
-  {
-    need_detail = JSON.parse(localStorage.getItem('all_needs'));
-    console.log('input storage: ', need_detail);
-   // need_detail = JSON.parse(input_storage);
-    //var stringy_needs_two = JSON.stringify(need_detail); //saving product data
-    //localStorage.setItem('all_needs', stringy_needs);
-    console.log(need_detail);
-    //input_storage.JSON.parse(stringy_needs);
-  } else {
+  //grabs from localstringy needs and puts it in local storage
     var stringy_needs = JSON.stringify(need_detail);
     localStorage.setItem('all_needs', stringy_needs);//array gets completely overwritten here, doesn't translate to next page when navigating without tabs
     console.log('something worked');
-  }
 };
 
 
