@@ -52,7 +52,7 @@ header h1{
     font-size: 180%;
 }
 main{
-    width: 70%;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
     clear: both;
@@ -91,8 +91,11 @@ footer div img{
     height: auto;
 }
 footer p{
+    width: 98%;
+    font-family: 'Caveat Brush', cursive;
     color: white;
-    bottom: 
-    left: 10px;
-    width: 400px;
+    font-size: 130%;
+    text-align: right;
+    position: absolute;
+    bottom: -305px;
 }
