@@ -7,7 +7,6 @@
 var needs_list = [];
 
 //Function -- render a form to the needs list page
-// ALIYA WILL ENTER CODE HERE
 
 
 var render_list = function(){
@@ -37,17 +36,9 @@ var render_list = function(){
     need_ul_el.appendChild(need_li_el);
 
     target.appendChild(need_ul_el);
-    //sticky note image.appendChild(need_ul_el)
-    //target.appendChild(sticky note image)
   }
 };
 
-
-
-
-//Is it a bad idea to just enter three in the screen and then have them sit in local memory?
-//Guessing we could get rid of all code below. I know that is probably a nightmare for Tammy and Aliya, since
-//you spent a long time on this code. It looks great, I'm just not sure how to use it with the local storage.
 
 var Needs_form = function (contact_name, email, need_input){
   this.contact_name = contact_name;
