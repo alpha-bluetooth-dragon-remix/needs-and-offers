@@ -1,5 +1,6 @@
 body{
-    background-color: rgb(152, 178, 183)
+    background-color: rgb(186, 208, 229);
+    font-family: 'B612', sans-serif;
 }
 body ul{
     list-style-type: none;
@@ -18,7 +19,59 @@ header div{
     top: 7px;
     left: 10px;
 }
+header nav ul{
+    width: 90%;
+    list-style-type: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: inline-block;
+    position: relative;
+    top: -80px;
+}
+header nav li{
+    float: right;
+    display: inline-block;
+    border-color: black;
+    border-style: solid;
+    border-width: 2px;
+    width: 80px;
+    text-align: center;
+    margin: 5px;
+    height: 35px;
+    padding-top: 15px;
+    border-radius: 25px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    background-color: blueviolet;
+    color: white;
+}
+header nav li:hover {
+    border-color: blueviolet;
+    background-color: black;
+    color: blueviolet;
+  }
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Maven Pro', sans-serif;
+}
+/*body{
+    background-color: rgb(186, 208, 229)
+}
+
+header div{
+    width:100%;
+}
+#header{
+    max-width: 100%;
+    height: auto;
+    float: left;
+}
+#logo{
+    width: 15%;
+    position: absolute;
+    top: 7px;
+    left: 10px;
+}
+*
 header nav ul{
     width: 90%;
     list-style-type: none;
@@ -37,6 +90,7 @@ header nav li{
     padding-top: 15px;
     border-radius: 25px;
 }
+*/
 content article{
     width: 80%;
     margin: auto;
@@ -87,14 +141,32 @@ section div ul{
     display: inline-block;
     margin-left: auto;
     margin-right: auto;
+    background-color: rgb(219, 227, 231);
 }
 
 section div ul li{
+    padding-inline-start: 0px;
     width: 100%;
     text-align: center;
+    padding: 7px;
+    margin-left: 3px;
+    margin-top: 1px;
+    font-size: 100%;
+}
+strong {
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 110%;
+}
+section div ul li img{
+    padding-inline-start: 0px;
+    margin-left: 0px;
+    margin-right: 10px;
 }
 .bio{
     text-align: left;
+    width: 90%;
+    font-family: 'B612', sans-serif;
+    font-size: 75%;
 }
 
 section div ul div{
