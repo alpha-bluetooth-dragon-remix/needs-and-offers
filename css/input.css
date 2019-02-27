@@ -45,7 +45,7 @@ header nav li:hover {
     background-color: black;
     color: blueviolet;
   }
-h1{
+header h1{
     position: relative;
     top: 230px;
     left: 50px;
