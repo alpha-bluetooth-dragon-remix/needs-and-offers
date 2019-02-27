@@ -37,6 +37,8 @@ var render_list = function(){
     need_ul_el.appendChild(need_li_el);
 
     target.appendChild(need_ul_el);
+    //sticky note image.appendChild(need_ul_el)
+    //target.appendChild(sticky note image)
   }
 };
 
@@ -46,6 +48,7 @@ var render_list = function(){
 //Is it a bad idea to just enter three in the screen and then have them sit in local memory?
 //Guessing we could get rid of all code below. I know that is probably a nightmare for Tammy and Aliya, since
 //you spent a long time on this code. It looks great, I'm just not sure how to use it with the local storage.
+
 var Needs_form = function (contact_name, email, need_input){
   this.contact_name = contact_name;
   this.email = email;
@@ -53,6 +56,7 @@ var Needs_form = function (contact_name, email, need_input){
 };
 
 // Hard code 3 example Need objects
+/*
 var visitor_austin = new Needs_form ('Visitor from Austin', 'aliya@gmail.com', 'Tour of Shoreline');
 
 var demi = new Needs_form ('Demi the Dog', 'demi@the-best-dog.com', 'Nothing; she\'s perfect' );
@@ -84,5 +88,5 @@ Needs_form.prototype.render_li = function() {
 Tammy.render_li();
 visitor_austin.render_li();
 demi.render_li();
-
+*/
 render_list();
