@@ -49,6 +49,17 @@ var render_list = function(){
 };
 
 
+document.getElementById('fillNeeds').onclick = render_test;
+
+var test_item = 'fish';
+function render_test(){
+  var target = document.getElementById('summaryH1');
+  var li_el = document.createElement('li');
+  li_el.textContent = test_item;
+  target.appendChild(li_el);
+}
+
+/*
 var Needs_form = function (contact_name, email, need_input){
   this.contact_name = contact_name;
   this.email = email;
@@ -56,7 +67,7 @@ var Needs_form = function (contact_name, email, need_input){
 };
 
 // Hard code 3 example Need objects
-/*
+
 var visitor_austin = new Needs_form ('Visitor from Austin', 'aliya@gmail.com', 'Tour of Shoreline');
 
 var demi = new Needs_form ('Demi the Dog', 'demi@the-best-dog.com', 'Nothing; she\'s perfect' );
