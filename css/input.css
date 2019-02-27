@@ -48,8 +48,8 @@ header nav li:hover {
 header h1{
     position: relative;
     top: -120px;
-    left: 30px;
-    font-size: 150%;
+    left: 20px;
+    font-size: 180%;
 }
 main{
     width: 70%;

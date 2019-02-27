@@ -93,6 +93,9 @@ section div ul li{
     width: 100%;
     text-align: center;
 }
+.bio{
+    text-align: left;
+}
 
 section div ul div{
     padding-left: 120px;
