@@ -32,8 +32,17 @@ var render_list = function(){
 
     //li for description
     need_li_el = document.createElement('li');
-    need_li_el.textContent = (needs_list[i].need_input);
+    need_li_el.textContent = (needs_list[i].need_input); 
     need_ul_el.appendChild(need_li_el);
+
+    need_li_el = document.createElement('li');
+    need_li_el.textContent = 'Select this need: ';
+    need_ul_el.appendChild(need_li_el);
+
+    //adds checkbox with each new item
+    var checkbox_el = document.createElement('INPUT');
+    checkbox_el.setAttribute('type', 'checkbox');
+    need_ul_el.appendChild(checkbox_el);
 
     target.appendChild(need_ul_el);
   }
@@ -81,3 +90,9 @@ visitor_austin.render_li();
 demi.render_li();
 */
 render_list();
+
+/*function create_checkbox() {
+  var checkbox_el = document.createElement("INPUT");
+  checkbox_el.setAttribute("type", "checkbox");
+  document.body.appendChild(checkbox_el);
+} */
