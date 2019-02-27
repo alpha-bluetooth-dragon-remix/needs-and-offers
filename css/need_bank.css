@@ -34,6 +34,9 @@ header nav li{
     padding-top: 15px;
     border-radius: 25px;
 }
+header h1 {
+    
+}
 content ul {
     background-image: url('./img/post_it_note.jpg')
 }
