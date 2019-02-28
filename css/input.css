@@ -27,6 +27,9 @@ header nav ul{
     position: relative;
     top: -80px;
 }
+.nav:hover{
+    transform: scale(1.2);
+}
 header nav li{
     float: right;
     display: inline-block;
