@@ -125,6 +125,7 @@ content ul li {
 button{
     width: 80px;
     height: 30px;
+    margin-bottom: 20px;
 }
 /*Everything between this point and footer have to do with drag and drop items into the summary section in the html*/
 #summaryH1{
@@ -140,6 +141,31 @@ button{
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 60px;
+}
+#summary ul {
+    display: inline-block;
+    width: 325px;
+    height: 325px;
+    background-image: url(/img/sticky-note.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-left: 32px;
+    margin-top: 5px;
+    margin-right: 32px;
+    margin-bottom: 5px;
+    list-style-type: none;
+    font-family: 'Caveat Brush', cursive;
+    font-size: 130%;
+    padding-inline-start: 0px;
+}
+
+#summary ul li {
+    display: inline-block;
+    vertical-align: left;  
+    width: 280px;
+    padding-right: 5px;
+    margin-left: 25px;
+    margin-top: 20px;
 }
 /*Everything below is for the footer image and */
 footer div img{
