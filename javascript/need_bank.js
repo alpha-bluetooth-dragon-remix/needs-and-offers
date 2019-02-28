@@ -37,7 +37,7 @@ var render_list = function(){
 
     //adds checkbox with each new item
     var checkbox_el = document.createElement('INPUT');
-    checkbox_el.value = needs_list[i].need_input;
+    checkbox_el.value = needs_list[i].email;
     checkbox_el.setAttribute('type', 'checkbox');
     checkbox_el.setAttribute('class', 'checkbox');
     need_ul_el.appendChild(checkbox_el);
@@ -51,17 +51,24 @@ render_list();
 /*
 var boxes_checked = [];
 when a box is checked, boxes_checked.push(entire checked object)
-
 */
+
 //var checkbox_el_listener = document.getElementsByTagName('input');
 //checkbox_el.addEventListener('checked', checkbox_el_listener);
 
 
 document.getElementById('fillNeeds').addEventListener('click', function_name);
 
+//we need it to only render the value of the checked box
 //checkbox_el.checked counter
 function function_name(){
+  var summary_target = document.getElementById('summary');
   var check_boxes_els = document.getElementsByClassName('checkbox');
+  var thank_you = 'Thank you for fulfilling some community needs!';
+  var thanks_h1_el = document.createElement('h1');
+  thanks_h1_el.textContent = thank_you;
+  summary_target.appendChild(thanks_h1_el);
+
   console.log('checked: ', check_boxes_els);
 // function that grabs checks
 // when render_list item.checked === true, it only prints when every checkbox is true
