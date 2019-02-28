@@ -13,6 +13,7 @@ var render_list = function(){
   var storage_stringy_needs = localStorage.getItem('all_needs');
   needs_list = JSON.parse(storage_stringy_needs);
   var target = document.getElementById('needListItems');
+
   //loops through array record by record and renders content to page
   for (var i = 0; i < needs_list.length; i++) {
     var need_ul_el = document.createElement('ul');
@@ -37,9 +38,10 @@ var render_list = function(){
 
     //adds checkbox with each new item
     var checkbox_el = document.createElement('INPUT');
-    checkbox_el.value = needs_list[i].need_input;
+    checkbox_el.value = i;
     checkbox_el.setAttribute('type', 'checkbox');
     checkbox_el.setAttribute('class', 'checkbox');
+    // checkbox_el.setAttribute('id', i);
     need_ul_el.appendChild(checkbox_el);
 
     target.appendChild(need_ul_el);
@@ -48,13 +50,17 @@ var render_list = function(){
 render_list();
 
 
-/*
-var boxes_checked = [];
-when a box is checked, boxes_checked.push(entire checked object)
+var handle_check = function(event){
+  console.log(event);
+  console.log(event.target.value);
+  console.log(needs_list[event.target.value].email);
+  console.log(event.target.value);  
+};
 
-*/
-//var checkbox_el_listener = document.getElementsByTagName('input');
-//checkbox_el.addEventListener('checked', checkbox_el_listener);
+var test = document.getElementById('needListItems');
+test.addEventListener('click', handle_check);
+
+
 
 
 document.getElementById('fillNeeds').addEventListener('click', function_name);
