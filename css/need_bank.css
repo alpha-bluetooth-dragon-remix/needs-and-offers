@@ -1,10 +1,13 @@
+/* body holds the background color and font family style for all of the regular size text within paragraphs*/
 body{
     background-color: rgb(186, 208, 229);
     font-family: 'B612', sans-serif;
 }
+/*holds the font style for all of the headers within the page*/
 h1, h2, h3, h4, h5, h6{
     font-family: 'Maven Pro', sans-serif;
 }
+/*Everything below from header div - head nav li:hover takes care of the top header portion of the page*/
 header div{
     width:100%;
 }
@@ -53,6 +56,7 @@ header nav li:hover {
     background-color: black;
     color: blueviolet;
 }
+/*Everything from main - main article takes care of the picture and the paragraph before the first page break line at hr*/
 main{
     width: 90%;
     top: -60px;
@@ -79,7 +83,7 @@ main article{
 hr{
     width: 100%;
 }
-
+/*Everything from content h1 - button are contained between the two horizontal rows in the page. This is where objects are rendered*/
 content h1{
     width: 100%;
     text-align: center;
@@ -122,10 +126,22 @@ button{
     width: 80px;
     height: 30px;
 }
+/*Everything between this point and footer have to do with drag and drop items into the summary section in the html*/
 #summaryH1{
     width: 100%;
     text-align: center;
 }
+#summary{
+    border-color: white;
+    border-style: solid;
+    border-width: 3px;
+    width: 80%;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
+}
+/*Everything below is for the footer image and */
 footer div img{
     max-width: 100%;
     height: auto;
