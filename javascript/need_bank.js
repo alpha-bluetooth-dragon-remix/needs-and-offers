@@ -16,6 +16,8 @@ var render_list = function(){
   //loops through array record by record and renders content to page
   for (var i = 0; i < needs_list.length; i++) {
     var need_ul_el = document.createElement('ul');
+    need_ul_el.getAttribute('data-draggable');
+    need_ul_el.setAttribute('data-draggable', 'false');
     var need_li_el = document.createElement('li');
     //li for name
     need_li_el.textContent = needs_list[i].contact_name;
@@ -31,16 +33,16 @@ var render_list = function(){
     need_li_el.textContent = (needs_list[i].need_input); 
     need_ul_el.appendChild(need_li_el);
 
-    need_li_el = document.createElement('li');
-    need_li_el.textContent = 'Select this need: ';
-    need_ul_el.appendChild(need_li_el);
+    // need_li_el = document.createElement('li');
+    // need_li_el.textContent = 'Select this need: ';
+    // need_ul_el.appendChild(need_li_el);
 
     //adds checkbox with each new item
-    var checkbox_el = document.createElement('INPUT');
-    checkbox_el.value = needs_list[i].email;
-    checkbox_el.setAttribute('type', 'checkbox');
-    checkbox_el.setAttribute('class', 'checkbox');
-    need_ul_el.appendChild(checkbox_el);
+    // var checkbox_el = document.createElement('INPUT');
+    // checkbox_el.value = needs_list[i].email;
+    // checkbox_el.setAttribute('type', 'checkbox');
+    // checkbox_el.setAttribute('class', 'checkbox');
+    // need_ul_el.appendChild(checkbox_el);
 
     target.appendChild(need_ul_el);
   }
