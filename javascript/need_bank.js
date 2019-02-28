@@ -5,7 +5,7 @@
 
 //Global Variable - stores contents from local Storage
 var needs_list = [];
-
+var checkbox_el = document.createElement('INPUT');
 //Function -- render a form to the needs list page
 
 
@@ -40,15 +40,27 @@ var render_list = function(){
     need_ul_el.appendChild(need_li_el);
 
     //adds checkbox with each new item
-    var checkbox_el = document.createElement('INPUT');
+    checkbox_el = document.createElement('INPUT');
     checkbox_el.setAttribute('type', 'checkbox');
     need_ul_el.appendChild(checkbox_el);
 
     target.appendChild(need_ul_el);
   }
 };
+render_list();
 
 
+document.getElementById('fillNeeds').onclick = function_name;
+
+function function_name(){
+// function that grabs checks
+// when render_list item.checked = true
+  if(checkbox_el.checked == true){
+    alert('you have checked a box');
+  }
+}
+
+/*
 document.getElementById('fillNeeds').onclick = render_test;
 
 var test_item = 'fish';
@@ -58,7 +70,7 @@ function render_test(){
   li_el.textContent = test_item;
   target.appendChild(li_el);
 }
-
+*/
 /*
 var Needs_form = function (contact_name, email, need_input){
   this.contact_name = contact_name;
@@ -100,10 +112,4 @@ Tammy.render_li();
 visitor_austin.render_li();
 demi.render_li();
 */
-render_list();
 
-/*function create_checkbox() {
-  var checkbox_el = document.createElement("INPUT");
-  checkbox_el.setAttribute("type", "checkbox");
-  document.body.appendChild(checkbox_el);
-} */
