@@ -1,10 +1,13 @@
+/* body holds the background color and font family style for all of the regular size text within paragraphs*/
 body{
     background-color: rgb(186, 208, 229);
     font-family: 'B612', sans-serif;
 }
+/*holds the font style for all of the headers within the page*/
 h1, h2, h3, h4, h5, h6{
     font-family: 'Maven Pro', sans-serif;
 }
+/*Everything below from header div - head nav li:hover takes care of the top header portion of the page*/
 header div{
     width:100%;
 }
@@ -51,7 +54,8 @@ header nav li:hover {
     border-color: blueviolet;
     background-color: black;
     color: blueviolet;
-  }
+}
+/*Eveerything from header h1 - need button take care of the paragraph and picture on the right and the form on the left in the middle of the page*/
 header h1{
     width: 300px;
     position: relative;
@@ -94,6 +98,7 @@ label {
 #need-button {
     padding-bottom: 15px;
 }
+/*Everything below is for the footer image and */
 footer div img{
     max-width: 100%;
     height: auto;

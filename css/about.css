@@ -1,10 +1,13 @@
+/* body holds the background color and font family style for all of the regular size text within paragraphs*/
 body{
     background-color: rgb(186, 208, 229);
     font-family: 'B612', sans-serif;
 }
+/*gets rid of all of the discs or circles out front of the list items*/
 body ul{
     list-style-type: none;
 }
+/*Everything below from header div - head nav li:hover takes care of the top header portion of the page*/
 header div{
     width:100%;
 }
@@ -52,48 +55,11 @@ header nav li:hover {
     background-color: black;
     color: blueviolet;
   }
-
+/*holds the font style for all of the headers within the page*/
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Maven Pro', sans-serif;
 }
-/*body{
-    background-color: rgb(186, 208, 229)
-}
-
-header div{
-    width:100%;
-}
-#header{
-    max-width: 100%;
-    height: auto;
-    float: left;
-}
-#logo{
-    width: 15%;
-    position: absolute;
-    top: 7px;
-    left: 10px;
-}
-*
-header nav ul{
-    width: 90%;
-    list-style-type: none;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    display: inline-block;
-}
-header nav li{
-    float: right;
-    display: inline-block;
-    border-style: solid;
-    border-width: 2px;
-    width: 80px;
-    text-align: center;
-    margin: 5px;
-    height: 35px;
-    padding-top: 15px;
-    border-radius: 25px;
-}
-*/
+/*everything from content article - content aritcle p takes care of the paragraphs*/
 content article{
     width: 80%;
     margin: auto;
@@ -105,6 +71,7 @@ content article h1{
 content article p{
     text-indent: 50px;
 }
+/*Everything within the section - section div ul div takes care of the bio pages*/
 section{
     width: 60%;
     margin: auto;
@@ -176,18 +143,8 @@ section div ul li img{
 section div ul div{
     padding-left: 114px;
 }
-
-
+/*Everything below is for the footer image and */
 footer div img{
     max-width: 100%;
     height: auto;
-}
-
-footer p{
-    width: 98%;
-    font-family: 'Caveat Brush', cursive;
-    color: white;
-    font-size: 130%;
-    text-align: right;
-    position: absolute;
 }
