@@ -23,9 +23,12 @@ This market makes the needs and resources known. Whether the need is a 3-night s
 5.4.0
 
 ### Citing Resources
-Rojal. (2017). Sticky Notes PNG 99824. Retrieved from https://webiconspng.com/icon/56365.
-
 DanielBota.RO. Sticky note wall, Intrepidfleetweekconcert075-1280x854. Retrieved from http://danielbota.ro/pseudo-intelectualul/.
 
 MatsSvensson. (2015). Accessible Drag and Drop with Multiple Items. Retrieved from https://www.sitepoint.com/accessible-drag-drop/.
 
+Papas, Zoe. Photo of City Under Cloudy Sky. Retrieved from https://www.pexels.com/photo/photo-of-city-under-cloudy-sky-959813/
+
+Rawpizel.com. (2018). Woman Holding Yellow Sticky Note. Retrieved from https://www.pexels.com/photo/woman-holding-yellow-sticky-note-1391405/.
+
+Rojal. (2017). Sticky Notes PNG 99824. Retrieved from https://webiconspng.com/icon/56365.

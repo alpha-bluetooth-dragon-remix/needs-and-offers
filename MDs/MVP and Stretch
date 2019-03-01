@@ -1,12 +1,12 @@
 MVP
-User friendly page (page 1) where visitors can enter a need.
-Submitted need will renter onto a needs page (page 2).
-User can respond to need by checking the boxes they want and then submitting (page 2).
-Once the counter is reached on the checked/submitted item, that need is removed (page 2).
-  - the needer receives an email alert
-  - the needer and offerer connect on their own
+User friendly Home page where visitors can enter a need.
+Submitted need will render onto a Needs page.
+User can respond to needs by selecting the boxes they want on Needs page.
+Once the item is selected, that person offering to fill the need can send the needer an email alert.
+The needer and offerer will connect on their own.
   
 Stretch
-Dropdown on needs page (page 1) to categorize the need.
-Categorization on the needs summary page (page 2) that breaks the needs into categories.
-Submit counter and erasing items
+A dropdown on Home page to categorize the need when making a submission.
+A counter to limit the number of offers when making a submission. 
+Categorization on the needs on the Needs page that breaks the needs into categories.
+Remove need from Needs page when the need is fulfilled or the counter is reached. 
