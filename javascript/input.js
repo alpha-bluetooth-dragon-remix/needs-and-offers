@@ -36,9 +36,7 @@ var submit_button_handler = function(event){ // eslint-disable-line
 
 //Function -- stringify the contents of the array and send to local storage
 var needs_storage = function () {
-  console.log('heeey');
   //grabs from localstringy needs and puts it in local storage
   var stringy_needs = JSON.stringify(need_detail);
   localStorage.setItem('all_needs', stringy_needs);//array gets completely overwritten here, doesn't translate to next page when navigating without tabs
-  console.log('something worked');
 };

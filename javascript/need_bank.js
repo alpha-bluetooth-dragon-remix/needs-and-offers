@@ -27,7 +27,7 @@ var render_list = function(){
 
     //li for description
     need_li_el = document.createElement('li');
-    need_li_el.textContent = (needs_list[i].need_input); 
+    need_li_el.textContent = (needs_list[i].need_input);
     need_ul_el.appendChild(need_li_el);
 
     target.appendChild(need_ul_el);
