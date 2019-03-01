@@ -37,7 +37,7 @@ var render_list = function(){
 
 //https://stackoverflow.com/questions/15089857/sending-html-emails-with-javascript
 
-
+//function thast sends an email about the offers the user is willing to take.
 function sendMail(){//eslint-disable-line
   var mailBody = document.getElementById('summary').innerHTML;
   mailBody = mailBody.replace(/<[\d\w\/="\-\s]*>/gm, ' ');//eslint-disable-line
@@ -45,11 +45,3 @@ function sendMail(){//eslint-disable-line
 }
 
 render_list();
-
-//button for future email function
-document.getElementById('fillNeeds').addEventListener('click', function_name);
-
-//once our group knows more, we would like to fill in this function with code that emails the information from
-//selected items to the user.
-function function_name(){
-}
