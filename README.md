@@ -27,9 +27,5 @@ Rojal. (2017). Sticky Notes PNG 99824. Retrieved from https://webiconspng.com/ic
 
 DanielBota.RO. Sticky note wall, Intrepidfleetweekconcert075-1280x854. Retrieved from http://danielbota.ro/pseudo-intelectualul/.
 
-###Sticky notes wall picture source
-http://danielbota.ro/pseudo-intelectualul/
-
-###Drag and Drop function
 MatsSvensson. (2015). Accessible Drag and Drop with Multiple Items. Retrieved from https://www.sitepoint.com/accessible-drag-drop/.
 
