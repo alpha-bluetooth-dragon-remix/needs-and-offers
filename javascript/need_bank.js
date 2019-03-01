@@ -34,6 +34,16 @@ var render_list = function(){
   }
 };
 
+
+//https://stackoverflow.com/questions/15089857/sending-html-emails-with-javascript
+
+
+function sendMail(){//eslint-disable-line
+  var mailBody = document.getElementById('summary').innerHTML;
+  mailBody = mailBody.replace(/<[\d\w\/="\-\s]*>/gm, ' ');//eslint-disable-line
+  window.location="mailto:needs.offers.projects@gmail.com?subject=Offer for Processing &body="+mailBody;//eslint-disable-line
+}
+
 render_list();
 
 //button for future email function
