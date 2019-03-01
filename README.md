@@ -25,3 +25,6 @@ https://webiconspng.com/icon/56365
 
 ###Sticky notes wall picture source
 http://danielbota.ro/pseudo-intelectualul/
+
+###Drag and Drop function
+https://www.sitepoint.com/accessible-drag-drop/

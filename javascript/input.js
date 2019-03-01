@@ -18,7 +18,8 @@ var Need_form = function(contact_name, email, need_input){
 
 
 //Function - creates a form and sends it to storage when the submit button is pushed
-var submit_button_handler = function(event){
+//added eslint disable because submit_button_handler is defined on a different linked page
+var submit_button_handler = function(event){ // eslint-disable-line
 
   //assigns variable names to all the content that came in with the form
   var contact_name = event.target.nameInput.value;
@@ -41,10 +42,3 @@ var needs_storage = function () {
   localStorage.setItem('all_needs', stringy_needs);//array gets completely overwritten here, doesn't translate to next page when navigating without tabs
   console.log('something worked');
 };
-
-
-/*STRETCH GOALS:
-add category into constructor function as stretch goal
-Init function that holds all the form stuff
-*/
-
